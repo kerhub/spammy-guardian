@@ -1,0 +1,28 @@
+name: 'Spammy guardian'
+description: 'Delete spammy comments'
+inputs:
+  token:
+    description: 'GitHub Personal Access Token'
+    required: true
+  regex:
+    description: 'Regex to match'
+    required: false
+    default: /@(\w+)/g
+  minOccurrences:
+    description: 'minimum number of occurrences to trigger the action'
+    required: false
+    default: '10'
+  title:
+    description: 'title placeholder to moderate opened issues (as deletion is not possible with the GitHub API)'
+    required: false
+    default: '[Moderated]'
+  body:
+    description: 'body placeholder to moderate opened issues (as deletion is not possible with the GitHub API)'
+    required: false
+    default: 'Moderated content'
+  issueId:
+    description: 'Issue ID to test comments on'
+    required: false
+runs:
+  using: 'node16'
+  main: 'index.js'
