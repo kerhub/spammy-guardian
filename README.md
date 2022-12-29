@@ -20,10 +20,10 @@ Check my photos on **url**
 
 ## Inputs
 
-| Input         | Required | Description                                    | Default           |
-|---------------|----------|------------------------------------------------|-------------------|
-| minOccurences | false    | min count of occurrences to trigger the action | 5                 |
-| regex         | false    | Regex to test the occurrences against          | /@(\w+)/g         |
+| Input         | Required | Description                                    | Default             |
+|---------------|----------|------------------------------------------------|---------------------|
+| minOccurences | false    | min count of occurrences to trigger the action | 10                  |
+| regex         | false    | Regex to test the occurrences against          | /@(\w+)/g           |
 | title         | false    | optional title replacement for closed issues   | '[Moderated]'       |
 | body          | false    | optional body replacement for closed issues    | 'Moderated content' |
 
